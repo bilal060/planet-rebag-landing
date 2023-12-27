@@ -16,12 +16,98 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+input,
+textarea {
+  padding: 16px 20px;
+}
+
+.container-custom {
+  width: 90%;
+  margin: auto;
+}
+
+.team-card:nth-child(even) .content {
+  background: #588B6F;
+}
+
+.team-card:nth-child(odd) .content {
+  background: #305543;
+}
+
+.slick-track {
+  display: flex !important;
+  gap: 35px !important;
+  padding-bottom: 60px;
+}
+
+.slick-dots-custom li.slick-active button:before {
+  color: #29542A !important;
+  width: 20px;
+  height: 5px;
+  background: #29542A;
+  border-radius: 8px;
+  content: '' !important;
+  top: -2.5px !important;
+}
+
+.slick-dots-custom li {
+  margin: 0 !important;
+}
+
+.slick-dots-custom li button:before {
+  opacity: 1 !important;
+}
+
+.slick-dots-custom li button:before {
+  line-height: unset !important;
+}
+
+.slick-dots-custom .slick-list {
+  height: 100%;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  height: 100%;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  height: 100%;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list .slick-slide>div {
+  height: 100%;
+}
+
+
+@media (min-width: 640px) {
+  .slick-track {
+    gap: 45px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .slick-track {
+    gap: 55px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slick-track {
+    gap: 65px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slick-track {
+    gap: 75px !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  .slick-track {
+    gap: 85px !important;
+  }
 }
